@@ -1,0 +1,14 @@
+Example code for IronRuby .NET User Group presentation
+Sep 21, 2010
+
+Structure
+  -- main: Main folder with Movie library (C#)
+  -- lib: Dependencies to be used in the .sln
+  -- tools: Tools used to build or to run
+  -- examples: Ruby examples showing how to extend the class
+  -- spec: rSpec specification of the library
+  -- features: Cucumber features to test the library
+  -- sinatra: Sinatra example 
+  Rakefile
+  
+
