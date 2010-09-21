@@ -1,0 +1,10 @@
+%h1 Movie Listing
+- if @movies.empty?
+  %h3 (no movies, please add some)
+- @movies.each do |movie|
+  %h2 #{movie.title}
+
+%h1 Add a new movie
+%form{:method => "post"}
+  %input{:type=>'text', :size=>40, :name=>'title', :id=>'title'}
+  %input{:type=>'submit', :value=>'Add Movie'}
