@@ -17,6 +17,6 @@ Then /^The library should have (.*) movies$/ do |count|
   @lib.contents.count.should == count.to_i
 end
 
-Then /^"([^\"]*)" should be in the list$/ do |title|
-  @lib.contents.find( lambda { |m| m.title == title } ).should_not be_nil
+Then /^"([^\"]*)" should be in the list with release date "([^\"]*)"$/ do |title, release|
+  @lib.contents.find( lambda { |m| m.title == title and m.release_date == System::DateTime.parse(release) } ).should_not be_nil
 end
